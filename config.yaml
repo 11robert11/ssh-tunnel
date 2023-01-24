@@ -1,9 +1,0 @@
-userName: "rbarnett" #Username of host
-hostName: 192.168.2.40 #Hostname of endpoint (from last jump server)
-port: 22  #Port of ssh server (from last jump)
-identityFile: "id_rsa.pub"  #Location of identiy file TODO identity file for ssh servers behind jumps stored here
-tunnels:
-  - name: "ssh"
-    endpoint: remote  #Either remote or local
-    localBinding: "127.0.0.2:22"
-    remoteBinding: "127.0.0.1:22"
