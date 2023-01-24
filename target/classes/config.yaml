@@ -1,9 +1,0 @@
-userName: "user_name"
-hostName: localhost
-port: 22
-identityFile: "id_rsa.pub"
-tunnels:
-  - name: "ssh"
-    endpoint: remote
-    localBinding: "127.0.0.2:22"
-    remoteBinding: "127.0.0.1:22"
