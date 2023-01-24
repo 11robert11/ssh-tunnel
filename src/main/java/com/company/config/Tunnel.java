@@ -30,7 +30,7 @@ public class Tunnel {
     int localPort;
     public void setLocalBinding(String binding) throws Exception {
         this.localPort = Integer.parseInt(binding.split(":")[1]);
-        if(this.localPort > 65535)  throw new Exception();
+        if(this.localPort > 65535) throw new Exception("Port out of Range");
 
         this.localAddress = binding.split(":")[0];
 
@@ -40,7 +40,7 @@ public class Tunnel {
     String remoteAddress;
     public void setRemoteBinding(String binding) throws Exception {
         this.remotePort = Integer.parseInt(binding.split(":")[1]);
-        if(this.remotePort > 65535)  throw new Exception();
+        if(this.remotePort > 65535)  throw new Exception("Port out of Range");
 
         this.remoteAddress = binding.split(":")[0];
 
